@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=PT+Sans:wght@400;700&family=Poppins:wght@300;700&family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*default elements*/
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/*custom variables*/
+:root{
+  --hover-color:#ccc;
+  --btn-bg-color:black;
+  --shadow-text:0px 0px 8px black;
+  --box-shadow:0px 0px 7px black;
+  --bold:lighter;
+}
+
+/*Utility Classes*/
+
+.flex{
+  display: flex;
+}
+
+.main-container{
+  width: 80%;
+  position: relative;
+/*  background: red;*/
+margin-bottom: 20px;
+
+  margin-left: auto;
+}
+
+.container{
+  box-shadow: var(--box-shadow);
+  width: 92%;
+  margin-right:auto;
+  margin-left: 20px;
+/*  background: yellow;*/
+}
+
+
+
+
+
+
+
+/*side bar*/
+
+#sidebar{
+  width: 20%;
+  height: 100vh;
+/*  background: red;*/
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  overflow: auto;
+  position: fixed;
+  z-index: 100;
+  background: white;
+  
+
+
+}
+
+#sidebar h1{
+  text-align: center;
+  color: black;
+/*  text-shadow: var(--shadow-text);*/
+  padding-block:  5px 10px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+#flinks{
+  margin-left: auto;
+  width: 90%;
+/*  background: yellow;*/
+  margin-block: 20px;
+  font-size: 1.5rem;
+}
+
+#flinks ul{
+  width: 100%;
+/*  background: pink;*/
+  padding: 10px 10px;
+}
+
+#flinks ul li{
+  margin-block: 17px;
+}
+
+#flinks ul li a{
+/*  background: red;*/
+  display: block;
+  color:black;
+  transition: all 0.3s ease-out;
+  padding: 5px 10px;
+}
+
+#flinks ul li a:hover{
+  background: var(--hover-color);
+  font-weight: bolder;
+}
+
+
+/*second links*/
+#slinks{
+/*  background: red;*/
+
+}
+
+#slinks ul li{
+  margin-block: 10px;
+  font-size: 1.2rem;
+}
+
+#slinks ul li a{
+  color:black;
+  background: var(--hover-color);
+  display: block;
+  text-align: center;
+  padding:3px 10px;
+  transition: 0.3s ease;
+}
+
+#slinks ul li a:hover{
+  background: black;
+  color:white;
+}
+
+#list li a{
+  font-size: 1rem;
+}
+
+
+
+
+/*logo header*/
+.logo-header{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: black;
+  color:white;
+
+}
+
+.logo-header h1{
+    font-weight: lighter;
+}
+
+.logo-header i{
+  font-size: 1.7rem;
+}
+
+
+
+
+
+
+
+/*navigation bar*/
+
+nav{
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+/*  position: sticky;*/
+/*  top: 0;*/
+/*  box-shadow: var(--box-shadow);*/
+}
+
+nav h2{
+  font-weight: var(--bold);
+  letter-spacing: 3px;
+}
+
+#nav-icons i{
+  font-size: 1.3rem;
+  margin-inline: 3px;
+
+}
+
+
+/*banner section*/
+
+.banner{
+  width: 100%;
+  min-height: 100vh;
+  background: url('img/asset 0.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  color:white;
+
+}
+
+.banner h1{
+  font-size: 3.6rem;
+  margin-bottom: 15px;
+
+
+}
+
+.banner h2{
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+
+}
+
+.banner a{
+  background: black;
+  padding: 12px 20px;
+  color: white;
+
+}
+
+.banner a:hover{
+  background: var(--hover-color);
+  color: black;
+}
+
+
+
+/*items section*/
+
+#items{
+  width: 100%;
+  padding: 4px;
+  margin-block: 5px;
+  color:tomato;
+  font-style: italic;
+}
+
+
+/*card section*/
+
+.card{
+  width: 100%;
+  height: auto;
+  gap: 5px;
+  padding-inline: 10px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+
+.card-item{
+  width: 22%;
+}
+
+.card-item img{
+  width: 100%;
+  filter: grayscale(60%);
+}
+
+.card-item h1{
+  font-size: 1.4rem;
+
+}
+
+.card-item h2{
+  font-size: 1.2rem;
+}
+
+.card-item img:hover{
+  filter: grayscale(40%);
+}
+
+
+/*subscribe section*/
+
+.subs{
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 60px 20px 60px 20px;
+}
+
+.subs h1{
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.subs p{
+  margin-bottom: 10px;
+}
+
+.subs input{
+  width: 100%;
+  border: none;
+/*  box-shadow: 0px 0px 10px black;*/
+  height: 50px;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.subs a{
+  padding: 12px 24px;
+  background: tomato;
+  color: white;
+  font-size: 1rem;
+}
+
+/*footer conatact section*/
+
+.footer{
+  width: 100%;
+  padding: 70px 50px 30px 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact{
+  padding: 20px;
+  flex-direction: column;
+  width: 40%;
+/*  background: red;*/
+  text-align: center;
+  gap: 10px;
+
+}
+
+.contact form{
+  width: 100%;
+/*  background: yellow;*/
+  padding: 0px 20px 20px 20px;
+}
+
+.contact form input{
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-block: 10px;
+}
+
+#submit{
+  width: 100%;
+  padding: 5px;
+  background: black;
+  color:white;
+  font-weight: bolder;
+  border: none;
+}
+
+
+/*about section*/
+
+.about{
+  text-align: center;
+/*  background: red;*/
+  width: 20%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about ul{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about ul li a{
+  text-decoration: underline;
+  letter-spacing: 2px;
+  color:black;
+}
+
+
+/*store section*/
+
+.store{
+  padding: 20px;
+/*  background: red;*/
+}
+
+.store h4{
+  margin-bottom: 10px;
+}
+
+.store a{
+  color: black;
+  display: inline-block;
+  margin-block: 5px;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+	<title>CLothing-Store</title>
+</head>
+<body>
+
+	<!-- side bar-->
+	<aside id="sidebar" style="display: block;">
+		<h1>LOGO</h1>
+		<div id="flinks">
+			<ul>
+				<li><a href="#">Shirts</a></li>
+				<li><a href="#">Dresses</a></li>
+				<li><a href="#" style="font-weight: bolder;" onclick="togglebtn()" id="btn">Jeans <i class="fa-solid fa-caret-down"></i></a>
+					<ul id="list">
+						<li><a href="#">Skinny <i class="fa-solid fa-caret-down fa-rotate-270"></i></a></li>
+						<li><a href="#">Relaxed</a></li>
+						<li><a href="#">Straight</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Jackets</a></li>
+				<li><a href="#">Gymwear</a></li>
+				<li><a href="#">Blazers</a></li>
+				<li><a href="#">Shoes</a></li>
+			</ul>
+		</div>
+
+		<div id="slinks">
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a href="#">Subscribe</a></li>
+			</ul>
+		</div>
+		
+	</aside>
+
+	<!-- navigation bar -->
+	<div class="main-container">
+		<div class="container">
+			<div class="logo-header flex">
+				<h1>LOGO</h1>
+				<span><i class="fa-sharp fa-solid fa-bars" id="sidebtn" onclick="toggleside()"></i></span>
+			</div>
+			
+			<!-- navigation bar -->
+
+			<nav class="flex">
+				<h2>Jeans</h2>
+				<div id="nav-icons">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<i class="fa-solid fa-cart-shopping"></i>
+				</div>
+			</nav>
+
+
+			<!-- banner image -->
+			<section class="banner">
+				<h1>New Arrivals</h1>
+				<h2>COLLECTION 2023</h2>
+				<a href="#">SHOP NOW</a>
+			</section>
+
+			<!-- div itmes  -->
+			<div id="items">8 Items</div>
+
+
+			<!-- itme card  -->
+			<div class="card flex">
+				
+				<div class="card-item">
+					<img src="img/asset 1.jpeg">
+					<h2>Ripped Skinny Jeans</h2>
+					<h1>$24.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 2.jpeg">
+					<h2>Mega Ripped Jeans</h2>
+					<h1>$34.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 3.jpeg">
+					<h2>Washed Jeans</h2>
+					<h1>$56.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 4.jpeg">
+					<h2>Vintage Skinny Jeans</h2>
+					<h1>$89.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 3.jpeg">
+					<h2>Washed Jeans</h2>
+					<h1>$56.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 4.jpeg">
+					<h2>Vintage Skinny Jeans</h2>
+					<h1>$89.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 1.jpeg">
+					<h2>Ripped Skinny Jeans</h2>
+					<h1>$24.99</h1>
+				</div>
+
+				<div class="card-item">
+					<img src="img/asset 2.jpeg">
+					<h2>Mega Ripped Jeans</h2>
+					<h1>$34.99</h1>
+				</div>
+
+			</div>
+
+			<!-- subscribe section -->
+
+			<section class="subs">
+				<h1>Subscribe</h1>
+				<p>To get special offers and VIP treatment:</p>
+				<input type="email" name="" placeholder="Enter e-mail"><br>
+				<a href="#">Subscribe</a>
+			</section>
+
+
+			<section class="footer flex">
+				<div class="contact flex">
+					<h4>CONTACT</h4>
+					<p>Questions? Go ahead.</p>
+					<form>
+						<input type="text" name="" placeholder="Name">
+						<input type="email" name="" placeholder="Email">
+						<input type="text" name="" placeholder="Subject">
+						<input type="text" name="" placeholder="Message">
+						<button type="submit" id="submit">Submit</button>
+					</form>
+				</div>
+
+
+				<div class="about flex">
+					<h4>About</h4>
+					<ul class="flex"> 
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">We're hiring</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Find store</a></li>
+						<li><a href="#">Shipment</a></li>
+						<li><a href="#">Payment</a></li>
+						<li><a href="#">Gift card</a></li>
+						<li><a href="#">Return</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+
+				<div class="store">
+					<h4>Store</h4>
+					<ul>
+						<li><a href="#"><i class="fa-solid fa-location-dot"></i> Company Name</a></li>
+						<li><a href="#"><i class="fa-solid fa-phone"></i> 0044123123</a></li>
+						<li><a href="#"><i class="fa-solid fa-envelope"></i> ex@mail.com</a></li>
+					</ul><br>
+					<h4>We accept</h4>
+					<ul>
+						<li><a href="#"><i class="fa-brands fa-cc-amex"></i> Amex</a></li>
+						<li><a href="#"><i class="fa-solid fa-credit-card"></i> Credit Card</a></li>
+					</ul><br>
+					<div class="social-icon">
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-pinterest"></i>
+						<i class="fa-brands fa-square-snapchat"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin"></i>
+					</div>
+
+				</div>
+			</section>
+
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/18d5e5a3ba.js" crossorigin="anonymous"></script>
+<script>
+		function togglebtn(){
+			let list = document.getElementById('list');
+		if(list.style.display != 'none'){
+			list.style.display = 'none';
+		}
+		else{
+			list.style.display = 'block';
+
+		}
+
+	}
+	
+	function toggleside(){
+			let bar = document.getElementById('sidebar')
+		if(bar.style.display != 'none'){
+			bar.style.display = 'none';
+		}
+		else{
+			bar.style.display = 'block';
+
+		}
+
+	}	 
+
+</script>
+</body>
+</html>
